@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.gdevlast.counceltracker.AddInteraction"
+    tools:showIn="@layout/activity_add_interaction">
+
+    <TableRow >
+    <TextView
+        android:text="Date:"
+        android:id="@+id/date"
+        />
+    </TableRow>
+    <TableRow >
+        <TextView android:text="Notes:"/>
+    </TableRow>
+    <TableRow>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/notes"
+            />
+    </TableRow>
+    <TableRow>
+        <Button android:id="@+id/submit" android:text="Submit"></Button>
+    </TableRow>
+</android.widget.TableLayout>
